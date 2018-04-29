@@ -1,0 +1,1096 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://ontohub.org/scheduling-ontology-network/ISA88O"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://ontohub.org/scheduling-ontology-network/ISA88O">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="p0" IRI="https://ontohub.org/scheduling-ontology-network/ISA88O"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AlgebraicEq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BeginNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BooleanEq"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Condition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ControlRecipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSerie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataSet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DataType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EndNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnvironmentalImpact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentProceduralElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentProperty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentPropertyType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EquipmentRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExplicitTransition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ForkNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Header"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImplicitTransiiton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InputParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InputQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JoinNOde"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Level"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Link"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LogicalConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manpower"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MasterRecipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaterialTranfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergeNode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Node"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Number"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OperationLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutputParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OutputQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PSEF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PSElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParameterType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PermanentConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhaseLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalConnection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProceduralEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProceduralStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcedureLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcedureStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessCell"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProcessQuantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RecipeEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScalingFactor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Syncronization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemporalConection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitProcedureLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnitofMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ValueType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#From"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasCondition"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasElement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasEquipmentRequirement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasProceduralSTR"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasProcedureLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasQuantity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasScalingFactor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasStepLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#To"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#TransformableInto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composedOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#contains"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#definesValuesOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#folows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUnitOfMeasure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAllocatedInto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContainedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLevelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isQuantityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReferencedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isReferencedByAnother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRefinedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStructureOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mayBeFulfilledBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nextLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#quantityOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#references"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#referencesAnother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#structuralPartOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Equation"/>
+        <ObjectUnionOf>
+            <Class IRI="#AlgebraicEq"/>
+            <Class IRI="#BooleanEq"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EquipmentModule"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#EquipmentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#contains"/>
+                <Class IRI="#ControlModule"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProcedureStep"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#HasStepLevel"/>
+            <Class IRI="#ProcedureLevel"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ProcessCell"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#EquipmentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#contains"/>
+                <Class IRI="#ControlModule"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#contains"/>
+                <Class IRI="#EquipmentModule"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#contains"/>
+                <Class IRI="#Unit"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Unit"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#EquipmentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#contains"/>
+                <Class IRI="#ControlModule"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#contains"/>
+                <Class IRI="#EquipmentModule"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ValueType"/>
+        <ObjectUnionOf>
+            <Class IRI="#Equation"/>
+            <Class IRI="#Number"/>
+            <Class IRI="#PSEF"/>
+            <Class IRI="#Reference"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AlgebraicEq"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BeginNode"/>
+        <Class IRI="#ControlNode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BooleanEq"/>
+        <Class IRI="#Equation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Condition"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlModule"/>
+        <Class IRI="#EquipmentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlNode"/>
+        <Class IRI="#Node"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ControlRecipe"/>
+        <Class IRI="#RecipeEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSerie"/>
+        <Class IRI="#ParameterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataSet"/>
+        <Class IRI="#ParameterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DataType"/>
+        <Class IRI="#ParameterType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionNode"/>
+        <Class IRI="#ControlNode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EndNode"/>
+        <Class IRI="#ControlNode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Energy"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EnvironmentalImpact"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equation"/>
+        <Class IRI="#ValueType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipmentModule"/>
+        <Class IRI="#EquipmentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EquipmentRequirement"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExplicitTransition"/>
+        <Class IRI="#Transition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ForkNode"/>
+        <Class IRI="#ControlNode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Header"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImplicitTransiiton"/>
+        <Class IRI="#Transition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InputParameter"/>
+        <Class IRI="#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InputQuantity"/>
+        <Class IRI="#Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interaction"/>
+        <Class IRI="#Syncronization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JoinNOde"/>
+        <Class IRI="#ControlNode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Level"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Link"/>
+        <Class IRI="#PSElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LogicalConnection"/>
+        <Class IRI="#EquipmentRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manpower"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MasterRecipe"/>
+        <Class IRI="#RecipeEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaterialTranfer"/>
+        <Class IRI="#Syncronization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergeNode"/>
+        <Class IRI="#ControlNode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Node"/>
+        <Class IRI="#PSElement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Number"/>
+        <Class IRI="#ValueType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OperationLevel"/>
+        <Class IRI="#Level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutputParameter"/>
+        <Class IRI="#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OutputQuantity"/>
+        <Class IRI="#Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PSEF"/>
+        <Class IRI="#ValueType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PSElement"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parameter"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParameterType"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PermanentConnection"/>
+        <Class IRI="#PhysicalConnection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhaseLevel"/>
+        <Class IRI="#Level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalConnection"/>
+        <Class IRI="#EquipmentRelation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProceduralStructure"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcedureLevel"/>
+        <Class IRI="#Level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcedureStep"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessCell"/>
+        <Class IRI="#EquipmentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessLevel"/>
+        <Class IRI="#Level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessParameter"/>
+        <Class IRI="#Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProcessQuantity"/>
+        <Class IRI="#Quantity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RecipeEntity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Reference"/>
+        <Class IRI="#ValueType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resource"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScalingFactor"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Step"/>
+        <Class IRI="#Node"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Syncronization"/>
+        <Class IRI="#Link"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemporalConection"/>
+        <Class IRI="#PhysicalConnection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transition"/>
+        <Class IRI="#Link"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit"/>
+        <Class IRI="#EquipmentEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitProcedureLevel"/>
+        <Class IRI="#Level"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UnitofMeasure"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utility"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ValueType"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AlgebraicEq"/>
+        <Class IRI="#BooleanEq"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BeginNode"/>
+        <Class IRI="#DecisionNode"/>
+        <Class IRI="#EndNode"/>
+        <Class IRI="#ForkNode"/>
+        <Class IRI="#JoinNOde"/>
+        <Class IRI="#MergeNode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ControlRecipe"/>
+        <Class IRI="#MasterRecipe"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Equation"/>
+        <Class IRI="#Number"/>
+        <Class IRI="#PSEF"/>
+        <Class IRI="#Reference"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#InputParameter"/>
+        <Class IRI="#OutputParameter"/>
+        <Class IRI="#ProcessParameter"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OperationLevel"/>
+        <Class IRI="#PhaseLevel"/>
+        <Class IRI="#ProcedureLevel"/>
+        <Class IRI="#ProcessLevel"/>
+        <Class IRI="#UnitProcedureLevel"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="#Parameter"/>
+        <Class IRI="#InputParameter"/>
+        <Class IRI="#OutputParameter"/>
+        <Class IRI="#ProcessParameter"/>
+    </DisjointUnion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isQuantityOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasLevel"/>
+        <ObjectProperty IRI="#isLevelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasProceduralSTR"/>
+        <ObjectProperty IRI="#isStructureOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isContainedIn"/>
+        <ObjectProperty IRI="#contains"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#folows"/>
+        <ObjectProperty IRI="#precedes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#references"/>
+        <ObjectProperty IRI="#isReferencedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#referencesAnother"/>
+        <ObjectProperty IRI="#isReferencedByAnother"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#HasEquipmentRequirement"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#HasParameter"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#HasProceduralSTR"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#HasQuantity"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#HasScalingFactor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#HasStepLevel"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasUnitOfMeasure"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#nextLevel"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#HasEquipmentRequirement"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#HasParameter"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#HasProceduralSTR"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#HasQuantity"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#HasScalingFactor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#HasStepLevel"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasUnitOfMeasure"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#From"/>
+        <Class IRI="#Link"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasCondition"/>
+        <Class IRI="#ExplicitTransition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasElement"/>
+        <Class IRI="#ProceduralStructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasEquipmentRequirement"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasFormula"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasLevel"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasParameter"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasProceduralSTR"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasProcedureLevel"/>
+        <Class IRI="#ProceduralStructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasQuantity"/>
+        <Class IRI="#Parameter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasScalingFactor"/>
+        <Class IRI="#Parameter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasStepLevel"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#To"/>
+        <Class IRI="#Link"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#TransformableInto"/>
+        <Class IRI="#MasterRecipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#definesValuesOf"/>
+        <Class IRI="#EquipmentProperty"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#folows"/>
+        <Class IRI="#EquipmentEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUnitOfMeasure"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAllocatedInto"/>
+        <Class IRI="#ControlRecipe"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isLevelOf"/>
+        <Class IRI="#Level"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+        <Class IRI="#EquipmentEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isQuantityOf"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isReferencedBy"/>
+        <Class IRI="#EquipmentRelation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isReferencedByAnother"/>
+        <Class IRI="#EquipmentEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRefinedBy"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStructureOf"/>
+        <Class IRI="#ProceduralStructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#mayBeFulfilledBy"/>
+        <Class IRI="#EquipmentRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nextLevel"/>
+        <Class IRI="#Level"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#quantityOf"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#structuralPartOf"/>
+        <Class IRI="#ProceduralStructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#From"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasCondition"/>
+        <Class IRI="#Condition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasElement"/>
+        <Class IRI="#PSElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasEquipmentRequirement"/>
+        <Class IRI="#EquipmentRequirement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasFormula"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasLevel"/>
+        <Class IRI="#Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasParameter"/>
+        <Class IRI="#Parameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasProceduralSTR"/>
+        <Class IRI="#ProceduralStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasProcedureLevel"/>
+        <Class IRI="#Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasQuantity"/>
+        <Class IRI="#Quantity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasScalingFactor"/>
+        <Class IRI="#ScalingFactor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasStepLevel"/>
+        <Class IRI="#Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#To"/>
+        <Class IRI="#Node"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#TransformableInto"/>
+        <Class IRI="#ControlRecipe"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composedOf"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#definesValuesOf"/>
+        <Class IRI="#EquipmentPropertyType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#folows"/>
+        <Class IRI="#EquipmentEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUnitOfMeasure"/>
+        <Class IRI="#UnitofMeasure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAllocatedInto"/>
+        <Class IRI="#EquipmentProceduralElement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isLevelOf"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMadeUpOf"/>
+        <Class IRI="#EquipmentEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isQuantityOf"/>
+        <Class IRI="#Parameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isReferencedBy"/>
+        <Class IRI="#EquipmentEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isReferencedByAnother"/>
+        <Class IRI="#EquipmentRelation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRefinedBy"/>
+        <Class IRI="#ProceduralStructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStructureOf"/>
+        <Class IRI="#RecipeEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#mayBeFulfilledBy"/>
+        <Class IRI="#EquipmentProperty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nextLevel"/>
+        <Class IRI="#Level"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#quantityOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#structuralPartOf"/>
+        <Class IRI="#PSElement"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Quantity"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#HasLevel"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#RecipeEntity"/>
+                <Variable IRI="urn:swrl#re"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="#ProcedureLevel"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#MasterRecipe"/>
+                <Variable IRI="urn:swrl#re"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PSEF</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">PSEF=Product Specific Entry Forms
+</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

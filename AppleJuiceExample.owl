@@ -1,0 +1,3114 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://ontohub.org/scheduling-ontology-network/AppleJuiceExample"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://ontohub.org/scheduling-ontology-network/AppleJuiceExample">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://ontohub.org/scheduling-ontology-network/SROnetwork</Import>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToStructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInputMaterialOfTask"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#stepParameters"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJEquipReq"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJFeedPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJFeedPhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJMasterRecipeformula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJMixingStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AddTankMod2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdditionOperation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdditionTank02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdditionofVitaminCStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agitation2Phase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agitation2PhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgitationPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgitationPhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agitator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Agitator02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AplleJuiceBatchSched"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AppleJuiceMaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AppleJuiceMxingUPForm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AppleJuiceWithVitCmaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CleanRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CooledAJmaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingOperation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingOperationForm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CoolingPhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedLine101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedLine102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedLine103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedOperation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FeedOperationStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlowMeter301"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlowMeter302"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FlowMeter303"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GradC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans1OpFormula"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans1OpStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans1Phase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans1PhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans2OpSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans2Phase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrans2PhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LiquidTrnas2OpStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liquidtrans2OpForm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MixTank1capacity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MixTankModule1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MixingTank1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ProcessRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pump201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pump202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pump203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RAJmaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SSFeedPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SSFeedPhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SSmaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StoreRole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tank01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tank02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tank03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TempControlJacket01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TransferLine02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TrasnferLine01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Unit2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valve401"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valve402"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valve403"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Valve405"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitaminAdditionPhaseStep"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitaminCAdditionPhase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitaminCAdditionUnitPForm"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VitaminCmaterial"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inPar1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inPar2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#inPar3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intPar4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intPar5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intPar6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#intPar7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it19"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it20"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it22"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it23"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#kg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#min"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#operationLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outPar1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outPar2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outPar5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#outPar6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc11"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc12"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc13"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc14"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc15"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc16"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc17"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc18"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc8"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pc9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procPar1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procPar2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procPar3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procPar4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procPar5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procPar6"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#procedureLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unitProcedureLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1tAJwithVitC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#15GradCTank1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#15GradCTank2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#15MinTank1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#15MinTank2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#476KgRAJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#476kgSS"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#48KgVitC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#952kgAJ"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#CleanInPlace"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Clean"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#DedicatedStorageUnit"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#StorageUnit"/>
+            <ObjectExactCardinality cardinality="0">
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#canStore"/>
+            </ObjectExactCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#onlyStore"/>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Material"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#ProcessingUnit"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Process"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#SharedStorageUnit"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#canStore"/>
+            <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Material"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#StorageUnit"/>
+        <ObjectIntersectionOf>
+            <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentEntity"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Store"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentRequirement"/>
+        <NamedIndividual IRI="#AJEquipReq"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#AJFeedPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#AJFeedPhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#AJMasterRecipeformula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#AJMixingStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#AddTankMod2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#AdditionofVitaminCStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#Agitation2Phase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#Agitation2PhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#AgitationPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#AgitationPhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#Agitator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#Agitator02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#SchedulingModel"/>
+        <NamedIndividual IRI="#AplleJuiceBatchSched"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+        <NamedIndividual IRI="#AppleJuiceMaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#AppleJuiceMxingUPForm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+        <NamedIndividual IRI="#AppleJuiceWithVitCmaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Clean"/>
+        <NamedIndividual IRI="#CleanRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+        <NamedIndividual IRI="#CooledAJmaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#CoolingOperation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#CoolingOperationForm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#CoolingPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#CoolingPhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#FeedOperationStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#FlowMeter301"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#FlowMeter302"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#FlowMeter303"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#UnitofMeasure"/>
+        <NamedIndividual IRI="#GradC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#LiquidTrans1OpFormula"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#LiquidTrans1OpStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#LiquidTrans1Phase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#LiquidTrans1PhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#LiquidTrans2OpSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#LiquidTrans2Phase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#LiquidTrans2PhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#LiquidTrnas2OpStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#Liquidtrans2OpForm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentProperty"/>
+        <NamedIndividual IRI="#MixTank1capacity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Process"/>
+        <NamedIndividual IRI="#ProcessRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Pump201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Pump202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Pump203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+        <NamedIndividual IRI="#RAJmaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#SSFeedPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#SSFeedPhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+        <NamedIndividual IRI="#SSmaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Store"/>
+        <NamedIndividual IRI="#StoreRole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#Tank01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#Tank02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#Tank03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#TempControlJacket01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#TransferLine02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EquipmentModule"/>
+        <NamedIndividual IRI="#TrasnferLine01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Unit"/>
+        <NamedIndividual IRI="#Unit1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Unit"/>
+        <NamedIndividual IRI="#Unit2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Valve401"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Valve402"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Valve403"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ControlModule"/>
+        <NamedIndividual IRI="#Valve405"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+        <NamedIndividual IRI="#VitaminAdditionPhaseStep"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#VitaminCAdditionPhase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitPForm"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+        <NamedIndividual IRI="#VitaminCmaterial"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#BeginNode"/>
+        <NamedIndividual IRI="#b8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#EndNode"/>
+        <NamedIndividual IRI="#e8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#inPar1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#inPar2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#inPar3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#intPar4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#intPar5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#intPar6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+        <NamedIndividual IRI="#intPar7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it19"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it20"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it22"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it23"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ImplicitTransiiton"/>
+        <NamedIndividual IRI="#it9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#UnitofMeasure"/>
+        <NamedIndividual IRI="#kg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#UnitofMeasure"/>
+        <NamedIndividual IRI="#min"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#OperationLevel"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#OutputParameter"/>
+        <NamedIndividual IRI="#outPar1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#OutputParameter"/>
+        <NamedIndividual IRI="#outPar2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#OutputParameter"/>
+        <NamedIndividual IRI="#outPar5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#OutputParameter"/>
+        <NamedIndividual IRI="#outPar6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc11"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc12"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc13"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc14"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc15"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc16"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc17"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc18"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc8"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PermanentConnection"/>
+        <NamedIndividual IRI="#pc9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#PhaseLevel"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcessParameter"/>
+        <NamedIndividual IRI="#procPar1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcessParameter"/>
+        <NamedIndividual IRI="#procPar2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcessParameter"/>
+        <NamedIndividual IRI="#procPar3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcessParameter"/>
+        <NamedIndividual IRI="#procPar4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcessParameter"/>
+        <NamedIndividual IRI="#procPar5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcessParameter"/>
+        <NamedIndividual IRI="#procPar6"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProcedureLevel"/>
+        <NamedIndividual IRI="#procedureLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#UnitofMeasure"/>
+        <NamedIndividual IRI="#tn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#UnitProcedureLevel"/>
+        <NamedIndividual IRI="#unitProcedureLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#1tAJwithVitC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#15GradCTank1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#15GradCTank2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#15MinTank1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#15MinTank2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#476KgRAJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#476kgSS"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#48KgVitC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+        <NamedIndividual IRI="#952kgAJ"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#AJFeedPhase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasEquipmentRequirement"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+        <NamedIndividual IRI="#AJEquipReq"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+        <NamedIndividual IRI="#AJMasterRecipeformula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+        <NamedIndividual IRI="#procedureLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AJMasterRecipe"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#AJMixingStep"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#b7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#LiquidTrans1OpStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#e7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#it19"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#FeedOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#it18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#it17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#it20"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AJMixingUPSTR"/>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#AddTankMod2"/>
+        <NamedIndividual IRI="#pc13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#AddTankMod2"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#AddTankMod2"/>
+        <NamedIndividual IRI="#Agitator02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#VitaminAdditionPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#e5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#b5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#it13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#it12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#it14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+        <NamedIndividual IRI="#Agitation2PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+        <NamedIndividual IRI="#Agitation2Phase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+        <NamedIndividual IRI="#VitaminCAdditionPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+        <NamedIndividual IRI="#outPar6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+        <NamedIndividual IRI="#procPar5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+        <NamedIndividual IRI="#procPar6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+        <NamedIndividual IRI="#intPar6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#AdditionOperationForm"/>
+        <NamedIndividual IRI="#intPar5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+        <NamedIndividual IRI="#AdditionOpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+        <NamedIndividual IRI="#pc13"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+        <NamedIndividual IRI="#pc14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+        <NamedIndividual IRI="#ProcessRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+        <NamedIndividual IRI="#StoreRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#AdditionofVitaminCStep"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#AgitationPhase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#Agitator"/>
+        <NamedIndividual IRI="#ProcessRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#Agitator02"/>
+        <NamedIndividual IRI="#ProcessRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#AdditionofVitaminCStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#AJMixingStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#it2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#it3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#it1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#AjMasterRecipeSTR"/>
+        <NamedIndividual IRI="#e1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+        <NamedIndividual IRI="#AppleJuiceMxingUPForm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+        <NamedIndividual IRI="#unitProcedureLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+        <NamedIndividual IRI="#CoolingOperation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#AppleJuiceMixingUnitP"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#CoolingOperation"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#CoolingOperation"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#CoolingOperation"/>
+        <NamedIndividual IRI="#CoolingPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#CoolingOperationForm"/>
+        <NamedIndividual IRI="#procPar3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#CoolingOperationForm"/>
+        <NamedIndividual IRI="#inPar3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#CoolingOperationForm"/>
+        <NamedIndividual IRI="#procPar4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#CoolingOperationForm"/>
+        <NamedIndividual IRI="#outPar2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+        <NamedIndividual IRI="#b3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+        <NamedIndividual IRI="#CoolingPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+        <NamedIndividual IRI="#it8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+        <NamedIndividual IRI="#it9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+        <NamedIndividual IRI="#e3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+        <NamedIndividual IRI="#CoolingOperationSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#CoolingPhase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#Tank01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#pc4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#Valve401"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#pc1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#pc2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#pc3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#Pump201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+        <NamedIndividual IRI="#FlowMeter301"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#Pump203"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#pc18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#pc17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#pc16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#pc15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#Tank03"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+        <NamedIndividual IRI="#Valve403"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#pc9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#Tank02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#Valve402"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#pc8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#Pump202"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#FlowMeter303"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+        <NamedIndividual IRI="#pc10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+        <NamedIndividual IRI="#procPar2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+        <NamedIndividual IRI="#outPar1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+        <NamedIndividual IRI="#procPar1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+        <NamedIndividual IRI="#inPar1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+        <NamedIndividual IRI="#inPar2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#AgitationPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#SSFeedPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#AJFeedPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#it7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#e2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#it5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#it6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#it4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+        <NamedIndividual IRI="#b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+        <NamedIndividual IRI="#FeedOpFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+        <NamedIndividual IRI="#AJFeedPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+        <NamedIndividual IRI="#AgitationPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#FeedOperation"/>
+        <NamedIndividual IRI="#SSFeedPhase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#FeedOperationStep"/>
+        <NamedIndividual IRI="#FeedOpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#FlowMeter301"/>
+        <NamedIndividual IRI="#pc3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#FlowMeter302"/>
+        <NamedIndividual IRI="#pc17"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#FlowMeter303"/>
+        <NamedIndividual IRI="#pc10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+        <NamedIndividual IRI="#LiquidTrans1OpFormula"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#LiquidTrans1Op"/>
+        <NamedIndividual IRI="#LiquidTrans1Phase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+        <NamedIndividual IRI="#LiquidTrans1PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+        <NamedIndividual IRI="#it10"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+        <NamedIndividual IRI="#it11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#LiquidTrans1OpStep"/>
+        <NamedIndividual IRI="#LiquidTrans1OpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#LiquidTrans1Phase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+        <NamedIndividual IRI="#Liquidtrans2OpForm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+        <NamedIndividual IRI="#LiquidTrans2OpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+        <NamedIndividual IRI="#LiquidTrans2Phase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#LiquidTrans2OpSTR"/>
+        <NamedIndividual IRI="#LiquidTrans2PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#LiquidTrans2Phase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+        <NamedIndividual IRI="#LiquidTrnas2OpStep"/>
+        <NamedIndividual IRI="#LiquidTrans2OpSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#Liquidtrans2OpForm"/>
+        <NamedIndividual IRI="#intPar7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+        <NamedIndividual IRI="#Liquidtrans2OpForm"/>
+        <NamedIndividual IRI="#outPar6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+        <NamedIndividual IRI="#TempControlJacket01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+        <NamedIndividual IRI="#pc7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+        <NamedIndividual IRI="#pc6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+        <NamedIndividual IRI="#pc5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+        <NamedIndividual IRI="#Agitator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+        <NamedIndividual IRI="#pc6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+        <NamedIndividual IRI="#pc7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+        <NamedIndividual IRI="#ProcessRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+        <NamedIndividual IRI="#StoreRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Pump201"/>
+        <NamedIndividual IRI="#pc2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Pump202"/>
+        <NamedIndividual IRI="#pc9"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Pump203"/>
+        <NamedIndividual IRI="#pc16"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#SSFeedPhase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Tank01"/>
+        <NamedIndividual IRI="#pc1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#Tank01"/>
+        <NamedIndividual IRI="#StoreRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Tank02"/>
+        <NamedIndividual IRI="#pc8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#Tank02"/>
+        <NamedIndividual IRI="#StoreRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Tank03"/>
+        <NamedIndividual IRI="#pc15"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasRole"/>
+        <NamedIndividual IRI="#Tank03"/>
+        <NamedIndividual IRI="#StoreRole"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#TempControlJacket01"/>
+        <NamedIndividual IRI="#pc5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#TransferLine02"/>
+        <NamedIndividual IRI="#pc14"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#TransferLine02"/>
+        <NamedIndividual IRI="#Valve405"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#TrasnferLine01"/>
+        <NamedIndividual IRI="#Valve404"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#TrasnferLine01"/>
+        <NamedIndividual IRI="#pc12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit1"/>
+        <NamedIndividual IRI="#FeedLine103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit1"/>
+        <NamedIndividual IRI="#FeedLine101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit1"/>
+        <NamedIndividual IRI="#MixTankModule1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit1"/>
+        <NamedIndividual IRI="#TrasnferLine01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit2"/>
+        <NamedIndividual IRI="#AddTankMod2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit2"/>
+        <NamedIndividual IRI="#FeedLine102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isMadeUpOf"/>
+        <NamedIndividual IRI="#Unit2"/>
+        <NamedIndividual IRI="#TransferLine02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Valve401"/>
+        <NamedIndividual IRI="#pc7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Valve402"/>
+        <NamedIndividual IRI="#pc11"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Valve403"/>
+        <NamedIndividual IRI="#pc18"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedByAnother"/>
+        <NamedIndividual IRI="#Valve404"/>
+        <NamedIndividual IRI="#pc12"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#b8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#it23"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#it22"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#it21"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#LiquidTrnas2OpStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#VitaminCAdditionPhase"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitPForm"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+        <NamedIndividual IRI="#unitProcedureLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+        <NamedIndividual IRI="#VitaminCAddUPSTR"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+        <NamedIndividual IRI="#AdditionOperation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <NamedIndividual IRI="#VitaminCAdditionUnitP"/>
+        <NamedIndividual IRI="#LiquidTrans2Op"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#inPar1"/>
+        <NamedIndividual IRI="#476KgRAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#inPar2"/>
+        <NamedIndividual IRI="#476kgSS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#inPar3"/>
+        <NamedIndividual IRI="#952kgAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#intPar4"/>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#intPar5"/>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#intPar6"/>
+        <NamedIndividual IRI="#48KgVitC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#intPar7"/>
+        <NamedIndividual IRI="#1tAJwithVitC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it1"/>
+        <NamedIndividual IRI="#b1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it1"/>
+        <NamedIndividual IRI="#AJMixingStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it10"/>
+        <NamedIndividual IRI="#b4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it10"/>
+        <NamedIndividual IRI="#LiquidTrans1PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it11"/>
+        <NamedIndividual IRI="#LiquidTrans1PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it11"/>
+        <NamedIndividual IRI="#e4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it12"/>
+        <NamedIndividual IRI="#b5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it12"/>
+        <NamedIndividual IRI="#VitaminAdditionPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it13"/>
+        <NamedIndividual IRI="#VitaminAdditionPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it13"/>
+        <NamedIndividual IRI="#Agitation2PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it14"/>
+        <NamedIndividual IRI="#Agitation2PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it14"/>
+        <NamedIndividual IRI="#e5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it15"/>
+        <NamedIndividual IRI="#b6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it15"/>
+        <NamedIndividual IRI="#LiquidTrans2PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it16"/>
+        <NamedIndividual IRI="#LiquidTrans2PhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it16"/>
+        <NamedIndividual IRI="#e6"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it17"/>
+        <NamedIndividual IRI="#b7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it17"/>
+        <NamedIndividual IRI="#FeedOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it18"/>
+        <NamedIndividual IRI="#FeedOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it18"/>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it19"/>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it19"/>
+        <NamedIndividual IRI="#LiquidTrans1OpStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it2"/>
+        <NamedIndividual IRI="#AJMixingStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it2"/>
+        <NamedIndividual IRI="#AdditionofVitaminCStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it20"/>
+        <NamedIndividual IRI="#LiquidTrans1OpStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it20"/>
+        <NamedIndividual IRI="#e7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it21"/>
+        <NamedIndividual IRI="#b8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it21"/>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it22"/>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it22"/>
+        <NamedIndividual IRI="#LiquidTrnas2OpStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it23"/>
+        <NamedIndividual IRI="#LiquidTrnas2OpStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it23"/>
+        <NamedIndividual IRI="#e8"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it3"/>
+        <NamedIndividual IRI="#AdditionofVitaminCStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it3"/>
+        <NamedIndividual IRI="#e1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it4"/>
+        <NamedIndividual IRI="#b2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it4"/>
+        <NamedIndividual IRI="#SSFeedPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it5"/>
+        <NamedIndividual IRI="#SSFeedPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it5"/>
+        <NamedIndividual IRI="#AJFeedPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it6"/>
+        <NamedIndividual IRI="#AJFeedPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it6"/>
+        <NamedIndividual IRI="#AgitationPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it7"/>
+        <NamedIndividual IRI="#AgitationPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it7"/>
+        <NamedIndividual IRI="#e2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it8"/>
+        <NamedIndividual IRI="#b3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it8"/>
+        <NamedIndividual IRI="#CoolingPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#From"/>
+        <NamedIndividual IRI="#it9"/>
+        <NamedIndividual IRI="#CoolingPhaseStep"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#To"/>
+        <NamedIndividual IRI="#it9"/>
+        <NamedIndividual IRI="#e3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#nextLevel"/>
+        <NamedIndividual IRI="#operationLevel"/>
+        <NamedIndividual IRI="#phaseLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#outPar1"/>
+        <NamedIndividual IRI="#952kgAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#outPar2"/>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#outPar5"/>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#outPar6"/>
+        <NamedIndividual IRI="#1tAJwithVitC"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc1"/>
+        <NamedIndividual IRI="#Pump201"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc10"/>
+        <NamedIndividual IRI="#Valve402"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc11"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc12"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc13"/>
+        <NamedIndividual IRI="#Agitator02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc14"/>
+        <NamedIndividual IRI="#Valve403"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc15"/>
+        <NamedIndividual IRI="#Pump203"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc16"/>
+        <NamedIndividual IRI="#FlowMeter302"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc17"/>
+        <NamedIndividual IRI="#Valve403"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc18"/>
+        <NamedIndividual IRI="#AdditionTank02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc2"/>
+        <NamedIndividual IRI="#FlowMeter301"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc3"/>
+        <NamedIndividual IRI="#Valve401"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc4"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc5"/>
+        <NamedIndividual IRI="#MixingTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc6"/>
+        <NamedIndividual IRI="#Agitator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc7"/>
+        <NamedIndividual IRI="#Valve404"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc8"/>
+        <NamedIndividual IRI="#Pump202"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isReferencedBy"/>
+        <NamedIndividual IRI="#pc9"/>
+        <NamedIndividual IRI="#FlowMeter303"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#procPar1"/>
+        <NamedIndividual IRI="#15MinTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#procPar2"/>
+        <NamedIndividual IRI="#15MinTank2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#procPar3"/>
+        <NamedIndividual IRI="#15GradCTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#procPar4"/>
+        <NamedIndividual IRI="#15GradCTank2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#procPar5"/>
+        <NamedIndividual IRI="#15MinTank1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+        <NamedIndividual IRI="#procPar6"/>
+        <NamedIndividual IRI="#15MinTank2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#nextLevel"/>
+        <NamedIndividual IRI="#procedureLevel"/>
+        <NamedIndividual IRI="#unitProcedureLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#nextLevel"/>
+        <NamedIndividual IRI="#unitProcedureLevel"/>
+        <NamedIndividual IRI="#operationLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#1tAJwithVitC"/>
+        <NamedIndividual IRI="#AppleJuiceWithVitCmaterial"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#15GradCTank2"/>
+        <NamedIndividual IRI="#Tank02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#15MinTank2"/>
+        <NamedIndividual IRI="#Tank02"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#hasUnitOfMeasure"/>
+        <NamedIndividual IRI="#476KgRAJ"/>
+        <NamedIndividual IRI="#kg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#476KgRAJ"/>
+        <NamedIndividual IRI="#RAJmaterial"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#hasUnitOfMeasure"/>
+        <NamedIndividual IRI="#476kgSS"/>
+        <NamedIndividual IRI="#kg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#476kgSS"/>
+        <NamedIndividual IRI="#SSmaterial"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#48KgVitC"/>
+        <NamedIndividual IRI="#VitaminCmaterial"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#952KgCooledAJ"/>
+        <NamedIndividual IRI="#CooledAJmaterial"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#hasUnitOfMeasure"/>
+        <NamedIndividual IRI="#952kgAJ"/>
+        <NamedIndividual IRI="#kg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+        <NamedIndividual IRI="#952kgAJ"/>
+        <NamedIndividual IRI="#AppleJuiceMaterial"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#isCritical"/>
+        <NamedIndividual IRI="#AdditionOperationStep"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#isCritical"/>
+        <NamedIndividual IRI="#CoolingOperationStep"/>
+        <Literal datatypeIRI="&xsd;boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#hasValue"/>
+        <NamedIndividual IRI="#476KgRAJ"/>
+        <Literal datatypeIRI="&xsd;decimal">476.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#hasValue"/>
+        <NamedIndividual IRI="#476kgSS"/>
+        <Literal datatypeIRI="&xsd;decimal">476.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#hasValue"/>
+        <NamedIndividual IRI="#952kgAJ"/>
+        <Literal datatypeIRI="&xsd;integer">952</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#belongsToStructure"/>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasElement"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInputMaterialOfTask"/>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Material"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#stepParameters"/>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#contains"/>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isInputMaterialOfTask"/>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Task"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#stepParameters"/>
+        <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Parameter"/>
+    </ObjectPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+                <Variable IRI="urn:swrl#iq"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+                <Variable IRI="urn:swrl#f"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+                <Variable IRI="urn:swrl#re"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+                <Variable IRI="urn:swrl#ps"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#f"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#ps"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#iq"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+                <Variable IRI="urn:swrl#iq"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#ps"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#InputConnection"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#isAnInputOf"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasInput"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+                <Variable IRI="urn:swrl#iq"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#OutputParameter"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+                <Variable IRI="urn:swrl#f"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+                <Variable IRI="urn:swrl#re"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+                <Variable IRI="urn:swrl#ps"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#f"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#ps"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#iq"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+                <Variable IRI="urn:swrl#iq"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#ps"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#OutputConnection"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#isAnOutputOf"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasOutput"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasFormula"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#f"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasParameter"/>
+                <Variable IRI="urn:swrl#f"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Formula"/>
+                <Variable IRI="urn:swrl#f"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Parameter"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+                <Variable IRI="urn:swrl#re"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#stepParameters"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Material"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#hasInput"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#quantityOf"/>
+                <Variable IRI="urn:swrl#q"/>
+                <Variable IRI="urn:swrl#r"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Quantity"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#InputParameter"/>
+                <Variable IRI="urn:swrl#p"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasQuantity"/>
+                <Variable IRI="urn:swrl#p"/>
+                <Variable IRI="urn:swrl#q"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isInputMaterialOfTask"/>
+                <Variable IRI="urn:swrl#r"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Level"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#RecipeEntity"/>
+                <Variable IRI="urn:swrl#re"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasLevel"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProceduralSTR"/>
+                <Variable IRI="urn:swrl#re"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProcedureLevel"/>
+                <Variable IRI="urn:swrl#str"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Level"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ClassAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#ProceduralStructure"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasProcedureLevel"/>
+                <Variable IRI="urn:swrl#str"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#isRefinedBy"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#str"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#Step"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="https://ontohub.org/scheduling-ontology-network/ISA88O.owl#HasStepLevel"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Variable IRI="urn:swrl#l"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#Task"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#isCritical"/>
+                <Variable IRI="urn:swrl#s"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="https://ontohub.org/scheduling-ontology-network/rtno.owl#criticalTask"/>
+                <Variable IRI="urn:swrl#s"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,371 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://ontohub.org/scheduling-ontology-network/smodo"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://ontohub.org/scheduling-ontology-network/smodo">
+    <Prefix name="" IRI="http://www.semanticweb.org/marcela/ontologies/2018/1/rtno#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#AvailabilityProfile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BatchSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FixedTaskDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaxBatchSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinBatchSize"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectiveFuntion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchedulingDetailLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchedulingEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchedulingModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchedulingParameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaskDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeHorizon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VariableTaskDuration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#criticalTask"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#limitedResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canPerform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#canStore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#consumes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#describeBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#durationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAvailabilityProfile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasConstraints"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasManpowerAvailabiltity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOutput"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUtilityCapacity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inputValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnInputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAnOutputOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isConsumedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProfileOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequiredBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#levelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#modelAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#onlyStore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#outputValue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requires"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isCritical"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isLimited"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#BatchSize"/>
+        <Class IRI="#SchedulingParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FixedTaskDuration"/>
+        <Class IRI="#TaskDuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaxBatchSize"/>
+        <Class IRI="#BatchSize"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinBatchSize"/>
+        <Class IRI="#BatchSize"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaskDuration"/>
+        <Class IRI="#SchedulingParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeHorizon"/>
+        <Class IRI="#SchedulingParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeRepresentation"/>
+        <Class IRI="#SchedulingParameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariableTaskDuration"/>
+        <Class IRI="#TaskDuration"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#criticalTask"/>
+        <Class IRI="#SchedulingEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#limitedResource"/>
+        <Class IRI="#SchedulingEntity"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#canStore"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#consumes"/>
+        <ObjectProperty IRI="#isConsumedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isProfileOf"/>
+        <ObjectProperty IRI="#hasAvailabilityProfile"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#produces"/>
+        <ObjectProperty IRI="#isProducedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isRequiredBy"/>
+        <ObjectProperty IRI="#requires"/>
+    </InverseObjectProperties>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#canPerform"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#canStore"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#describeBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#durationOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInput"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasManpowerAvailabiltity"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasOutput"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasUtilityCapacity"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#inputValue"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isAnInputOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isAnOutputOf"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#onlyStore"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#outputValue"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#produces"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#requires"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#canPerform"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#canStore"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#describeBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#durationOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCapacity"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInput"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasManpowerAvailabiltity"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasOutput"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasUtilityCapacity"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#inputValue"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isAnInputOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isAnOutputOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#onlyStore"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#outputValue"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#produces"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#requires"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#describeBy"/>
+        <Class IRI="#SchedulingEntity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#durationOf"/>
+        <Class IRI="#TaskDuration"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasConstraints"/>
+        <Class IRI="#SchedulingModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#levelOf"/>
+        <Class IRI="#SchedulingDetailLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#modelAt"/>
+        <Class IRI="#SchedulingDetailLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#describeBy"/>
+        <Class IRI="#SchedulingParameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAvailabilityProfile"/>
+        <Class IRI="#AvailabilityProfile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasConstraints"/>
+        <Class IRI="#Constraint"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTime"/>
+        <Class IRI="#TaskDuration"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isCritical"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isLimited"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
