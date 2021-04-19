@@ -1,3 +1,5 @@
+
+![sronet](https://user-images.githubusercontent.com/20926680/115287605-da67d880-a126-11eb-87f2-03ca7e8bfcf2.gif)
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/mvegetti/Scheduling-Ontology-Network-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
@@ -22,6 +24,7 @@ Syntax highlighted code block
 2. List
 
 **Bold** and _Italic_ and `Code` text
+![sronet](https://user-images.githubusercontent.com/20926680/115287668-ea7fb800-a126-11eb-99bd-fba373563460.gif)
 
 [Link](url) and ![Image](src)
 ```
