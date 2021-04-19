@@ -1,40 +1,13 @@
+## Scheduling Ontology Network (SROnet)
 
+SROnet allows the formalization and semantic integration of the different applications that support production planning, scheduling, and control in batch process industries. This network contains local ontologies that formalize:
+ 1.the vocabulary of the different information sources/destinations associated with the scheduling activities, and 
+ 2.a core ontology specifying a common vocabulary referred as Schedule Reference Ontology (SRO),
+ 
+ 
+ SRO plays an important role in the proposed network because it formalizes the main concepts related to industrial scheduling activities, to which other concepts belonging to the local ontologies have to map in order to semantically interoperate.  
+ 
+ 
 ![sronet](https://user-images.githubusercontent.com/20926680/115287605-da67d880-a126-11eb-87f2-03ca7e8bfcf2.gif)
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/mvegetti/Scheduling-Ontology-Network-/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-![sronet](https://user-images.githubusercontent.com/20926680/115287668-ea7fb800-a126-11eb-99bd-fba373563460.gif)
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mvegetti/Scheduling-Ontology-Network-/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Given the fact that there are dissimilar approaches to solving the scheduling problem, this proposal is flexible enough to accommodate different local ontologies that formalize diverse information sources.
