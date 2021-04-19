@@ -11,3 +11,4 @@ SROnet allows the formalization and semantic integration of the different applic
 ![sronet](https://user-images.githubusercontent.com/20926680/115287605-da67d880-a126-11eb-87f2-03ca7e8bfcf2.gif)
 
 Given the fact that there are dissimilar approaches to solving the scheduling problem, this proposal is flexible enough to accommodate different local ontologies that formalize diverse information sources.
+sronet](https://github.com/mvegetti/Scheduling-Ontology-Network-/blob/master/sro_doc)
