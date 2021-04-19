@@ -1,0 +1,11 @@
+[ {
+  "@id" : "https://ontohub.org/scheduling-ontology-network/SROnetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://ontohub.org/scheduling-ontology-network/isa88o.owl"
+  }, {
+    "@id" : "https://ontohub.org/scheduling-ontology-network/rtno.owl"
+  }, {
+    "@id" : "https://ontohub.org/scheduling-ontology-network/smodo.owl"
+  } ]
+} ]
