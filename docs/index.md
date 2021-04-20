@@ -24,5 +24,5 @@ The ontologies that have been implemented are the following:
 -[ISA88O](https://mvegetti.github.io/Scheduling-Ontology-Network-/isa88o_doc.md)
 
 
-SROnet has been applied to a case study. 
+
 
