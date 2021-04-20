@@ -19,9 +19,9 @@ The ontologies that have been implemented are the following:
 
 -[SRO](https://mvegetti.github.io/Scheduling-Ontology-Network-/sro_doc.md)
 
--[RTNO](https://github.com/mvegetti/Scheduling-Ontology-Network-/blob/master/docs/rtno_doc.md)
+-[RTNO](https://mvegetti.github.io/Scheduling-Ontology-Network-/rtno_doc.md)
 
--[ISA88O](https://github.com/mvegetti/Scheduling-Ontology-Network-/blob/master/docs/isa88o_doc.md)
+-[ISA88O](https://mvegetti.github.io/Scheduling-Ontology-Network-/isa88o_doc.md)
 
 
 SROnet has been applied to a case study. 
