@@ -17,11 +17,11 @@ Given the fact that there are dissimilar approaches to solving the scheduling pr
 
 The ontologies that have been implemented are the following:
 
--[SRO](https://mvegetti.github.io/Scheduling-Ontology-Network-/sro_doc.md)
+-[SRO](https://mvegetti.github.io/Scheduling-Ontology-Network-/sro_doc.html)
 
--[RTNO](https://mvegetti.github.io/Scheduling-Ontology-Network-/rtno_doc.md)
+-[RTNO](https://mvegetti.github.io/Scheduling-Ontology-Network-/rtno_doc.html)
 
--[ISA88O](https://mvegetti.github.io/Scheduling-Ontology-Network-/isa88o_doc.md)
+-[ISA88O](https://mvegetti.github.io/Scheduling-Ontology-Network-/isa88o_doc.html)
 
 
 
