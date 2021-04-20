@@ -10,9 +10,11 @@ SROnet allows the formalization and semantic integration of the different applic
 SRO plays an important role in the proposed network because it formalizes the main concepts related to industrial scheduling activities, to which other concepts belonging to the local ontologies have to map in order to semantically interoperate.  
  
  
-![sronet](https://user-images.githubusercontent.com/20926680/115287605-da67d880-a126-11eb-87f2-03ca7e8bfcf2.gif)
+![sronet](https://user-images.githubusercontent.com/20926680/115443043-1fecda00-a1e9-11eb-9f56-010b33c7053b.gif)
+
 
 Given the fact that there are dissimilar approaches to solving the scheduling problem, this proposal is flexible enough to accommodate different local ontologies that formalize diverse information sources.
+
 The ontologies that have been implemented are the following:
 
 -[SRO](https://github.com/mvegetti/Scheduling-Ontology-Network-/blob/master/docs/sro_doc.md)
@@ -23,3 +25,4 @@ The ontologies that have been implemented are the following:
 
 
 SROnet has been applied to a case study. 
+
