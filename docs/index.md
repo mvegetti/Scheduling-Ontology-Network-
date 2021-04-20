@@ -17,7 +17,7 @@ Given the fact that there are dissimilar approaches to solving the scheduling pr
 
 The ontologies that have been implemented are the following:
 
--[SRO](https://github.com/mvegetti/Scheduling-Ontology-Network-/blob/master/docs/sro_doc.md)
+-[SRO](https://mvegetti.github.io/Scheduling-Ontology-Network-/sro_doc.md)
 
 -[RTNO](https://github.com/mvegetti/Scheduling-Ontology-Network-/blob/master/docs/rtno_doc.md)
 
